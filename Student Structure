@@ -1,0 +1,26 @@
+#include <stdio.h>
+struct student{
+    char name[50];
+    char usn[20];
+    char mobnum[15];
+}stud[10];
+int main() {
+    int n;
+    printf("enter no of students:");
+    scanf("%d",&n);
+    for(int i=0;i<n;i++){
+        printf("enter name:");
+        scanf("%s",stud[i].name);
+        printf("enter usn:");
+        scanf("%s",stud[i].usn);
+        printf("enter mobile number:");
+        scanf("%s",stud[i].mobnum);
+    }
+    printf("details:\n");
+    for(int i=0;i<n;i++){
+        printf("Name:%s\n",stud[i].name);
+        printf("USN:%s\n",stud[i].usn);
+        printf("Mobile Number:%s\n",stud[i].mobnum);
+    }
+    return 0;
+}
